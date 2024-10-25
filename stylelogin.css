@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9f5e0; /* Açık yeşil arka plan */
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50; /* Başlık arka plan rengi */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px; /* Başlık yazı boyutu */
+}
+
+.form-wrapper {
+    max-width: 400px; /* Form genişliği */
+    margin: 50px auto; /* Ortala */
+    padding: 20px; /* İçerik boşluğu */
+    background-color: white; /* Arka plan rengi */
+    border-radius: 10px; /* Kenar yuvarlama */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Gölgelendirme */
+    text-align: center; /* İçerik ortalama */
+}
+
+.toggle-button {
+    background-color: #4CAF50; /* Yeşil arka plan */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px; /* Kenar yuvarlama */
+    cursor: pointer; /* İşaretçi */
+    font-size: 16px; /* Yazı boyutu */
+}
+
+.toggle-button:hover {
+    background-color: #45a049; /* Hover durumu */
+}
+
+.form-container {
+    margin-top: 20px; /* Formlar arasındaki boşluk */
+}
+
+input {
+    width: 100%; /* Genişlik ayarı */
+    padding: 10px; /* İç boşluk */
+    margin: 10px 0; /* Üst ve alt boşluk */
+    border: 1px solid #ccc; /* Kenar rengi */
+    border-radius: 5px; /* Kenar yuvarlama */
+    text-align: center; /* Metni ortalama */
+}
+
+button[type="submit"] {
+    width: 100%; /* Buton genişliği */
+    padding: 10px; /* İç boşluk */
+    background-color: #4CAF50; /* Yeşil arka plan */
+    color: white; /* Yazı rengi */
+    border: none; /* Kenar yok */
+    border-radius: 5px; /* Kenar yuvarlama */
+    cursor: pointer; /* İşaretçi */
+    font-size: 16px; /* Yazı boyutu */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Hover durumu */
+}

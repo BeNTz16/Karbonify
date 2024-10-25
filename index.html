@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karbonify - Ana Sayfa</title>
+    <link rel="stylesheet" href="styleindex.css">
+</head>
+<body>
+    <header>
+        <h1>Karbonify</h1>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="forum.html">Forum</a>
+            <a href="profile.html">Profil</a>
+            <a href="login.html">Çıkış Yap</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="nature1.jpg" alt="Doğa Manzarası 1" class="intro-image">
+                </div>
+                <div class="mySlides fade">
+                    <img src="nature2.jpg" alt="Doğa Manzarası 2" class="intro-image">
+                </div>
+                <div class="mySlides fade">
+                    <img src="nature3.jpg" alt="Doğa Manzarası 3" class="intro-image">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>Çevre İçin İpuçları</h2>
+            <ul>
+                <li>Günlük yaşamında daha fazla bisiklet kullan.</li>
+                <li>Atıklarını geri dönüştür ve azalt.</li>
+                <li>Enerji tasarrufu sağlamak için LED ampuller kullan.</li>
+                <li>Yerel gıdaları tercih ederek karbon ayak izini azalt.</li>
+                <li>Su tasarrufu için kısa duşlar al.</li>
+            </ul>
+        </section>
+
+        <!-- Yeni Bölüm: Öne Çıkanlar -->
+        <section class="featured-section">
+            <h2>Öne Çıkanlar</h2>
+            <div class="featured-items">
+                <div class="item">
+                    <h3>Ağaç Dikin!</h3>
+                    <p>Karbon ayak izinizi azaltmak için ağaç dikmeye başlayın.</p>
+                </div>
+                <div class="item">
+                    <h3>Geri Dönüşüm Projeleri</h3>
+                    <p>Geri dönüşüm hakkında bilgi edinin ve uygulamalarınızı geliştirin.</p>
+                </div>
+                <div class="item">
+                    <h3>Enerji Tasarrufu</h3>
+                    <p>Enerji tasarrufu sağlamak için ipuçları keşfedin.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-info">
+            <p>Birlikte daha yeşil bir gelecek için çalışalım!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Karbonify. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; // Tüm slaytları gizle
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 } // İlk slayta dön
+            slides[slideIndex - 1].style.display = "block"; // Aktif slaytı göster
+            setTimeout(showSlides, 3000); // 3 saniye sonra slaytı değiştir
+        }
+
+        function plusSlides(n) {
+            let slides = document.getElementsByClassName("mySlides");
+            slideIndex += n;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            if (slideIndex < 1) { slideIndex = slides.length; }
+            showSlides(); // Slaytı göster
+        }
+    </script>
+</body>
+</html>

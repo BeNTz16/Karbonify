@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif; /* Yazı tipi */
+    margin: 0; /* Dış boşluk yok */
+    padding: 0; /* İç boşluk yok */
+    background-color: #f7f9f4; /* Açık arka plan rengi */
+    color: #333; /* Yazı rengi */
+}
+
+header {
+    background-color: #4CAF50; /* Başlık arka plan rengi */
+    color: white; /* Yazı rengi */
+    padding: 15px; /* İç boşluk */
+    text-align: center; /* Ortala */
+}
+
+nav a {
+    color: white; /* Bağlantı yazı rengi */
+    margin: 0 15px; /* Yan boşluk */
+    text-decoration: none; /* Alt çizgi yok */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Hover durumunda alt çizgi */
+}
+
+.profile-header {
+    display: flex; /* Yatay düzen */
+    justify-content: space-between; /* Alanı eşit dağıt */
+    align-items: center; /* Dikey ortalama */
+    background-color: #e9f5e0; /* Açık yeşil arka plan */
+    padding: 20px; /* İçerik boşluğu */
+    border-radius: 10px; /* Kenar yuvarlama */
+    margin: 20px 0; /* Dış boşluk */
+}
+
+.profile-info {
+    flex: 1; /* Esnek alan */
+    text-align: center; /* Metni ortala */
+}
+
+.profile-info h2 {
+    font-size: 24px; /* Kullanıcı adı boyutu */
+    margin: 10px 0; /* Üst ve alt boşluk */
+}
+
+.profile-info p {
+    margin: 5px 0; /* Yukarı ve aşağıda boşluk */
+}
+
+.profile-picture {
+    flex-shrink: 0; /* Resmin boyutunu sabit tut */
+    text-align: center; /* Resmi ortala */
+}
+
+.profile-picture img {
+    border-radius: 75px; /* Yuvarlak profil resmi */
+    border: 2px solid #4CAF50; /* Yeşil kenarlık */
+}
+
+.edit-profile {
+    background-color: #4CAF50; /* Buton arka plan rengi */
+    color: white; /* Yazı rengi */
+    padding: 10px 15px; /* İç boşluk */
+    border: none; /* Kenar yok */
+    border-radius: 5px; /* Kenar yuvarlama */
+    cursor: pointer; /* İşaretçi */
+    font-size: 16px; /* Yazı boyutu */
+}
+
+.edit-profile:hover {
+    background-color: #45a049; /* Hover durumu */
+}
+
+.achievements, .recent-activities {
+    background-color: white; /* Beyaz arka plan */
+    border-radius: 10px; /* Kenar yuvarlama */
+    padding: 20px; /* İçerik boşluğu */
+    margin: 20px 0; /* Dış boşluk */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Gölgelendirme */
+}
+
+.achievement-list {
+    display: grid; /* Izgara düzeni */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Esnek sütun düzeni */
+    gap: 15px; /* Sütunlar arasındaki boşluk */
+}
+
+.achievement {
+    background-color: #f1f1f1; /* Açık gri arka plan */
+    padding: 15px; /* İçerik boşluğu */
+    border-radius: 5px; /* Kenar yuvarlama */
+    text-align: center; /* Metni ortalama */
+}
+
+.recent-activities {
+    border-top: 1px solid #ddd; /* Üst kenar */
+}
+
+.activity {
+    border-bottom: 1px solid #ddd; /* Alt kenar */
+    padding: 10px 0; /* İçerik boşluğu */
+}
+
+footer {
+    text-align: center; /* Ortala */
+    padding: 10px; /* İç boşluk */
+    background-color: #4CAF50; /* Alt kısım arka plan rengi */
+    color: white; /* Yazı rengi */
+    position: relative; /* Konum ayarı */
+    bottom: 0; /* En altta tut */
+    width: 100%; /* Tüm genişliği kapla */
+}

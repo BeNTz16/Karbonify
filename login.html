@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karbonify - Kayıt Ol & Giriş Yap</title>
+    <link rel="stylesheet" href="stylelogin.css">
+    <script>
+        function toggleForm(formType) {
+            const loginForm = document.getElementById('login-form');
+            const registerForm = document.getElementById('register-form');
+            
+            if (formType === 'login') {
+                loginForm.style.display = 'block';
+                registerForm.style.display = 'none';
+            } else {
+                loginForm.style.display = 'none';
+                registerForm.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Karbonify</h1>
+        </header>
+
+        <div class="form-wrapper">
+            <button class="toggle-button" onclick="toggleForm('login')">Giriş Yap</button>
+            <button class="toggle-button" onclick="toggleForm('register')">Kayıt Ol</button>
+
+            <div class="form-container">
+                <form id="login-form" action="#" method="post" style="display: block;">
+                    <h2>Giriş Yap</h2>
+                    <input type="text" name="username" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Şifre" required>
+                    <button type="submit">Giriş Yap</button>
+                </form>
+
+                <form id="register-form" action="#" method="post" style="display: none;">
+                    <h2>Kayıt Ol</h2>
+                    <input type="text" name="new_username" placeholder="Kullanıcı Adı" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="new_password" placeholder="Şifre" required>
+                    <button type="submit">Kayıt Ol</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

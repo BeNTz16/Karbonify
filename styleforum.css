@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif; /* Yazı tipi */
+    margin: 0; /* Dış boşluk yok */
+    padding: 0; /* İç boşluk yok */
+    background-color: #f7f9f4; /* Açık arka plan rengi */
+    color: #333; /* Yazı rengi */
+}
+
+header {
+    background-color: #4CAF50; /* Başlık arka plan rengi */
+    color: white; /* Yazı rengi */
+    padding: 15px; /* İç boşluk */
+    text-align: center; /* Ortala */
+}
+
+nav a {
+    color: white; /* Bağlantı yazı rengi */
+    margin: 0 15px; /* Yan boşluk */
+    text-decoration: none; /* Alt çizgi yok */
+    transition: color 0.3s; /* Renk geçiş efekti */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Hover durumunda alt çizgi */
+}
+
+.forum-header {
+    background-color: #e9f5e0; /* Açık yeşil arka plan */
+    padding: 20px; /* İçerik boşluğu */
+    border-radius: 10px; /* Kenar yuvarlama */
+    text-align: center; /* Metni ortala */
+    margin-bottom: 20px; /* Dış boşluk */
+}
+
+.new-topic {
+    background-color: #4CAF50; /* Buton arka plan rengi */
+    color: white; /* Yazı rengi */
+    padding: 10px 15px; /* İç boşluk */
+    border: none; /* Kenar yok */
+    border-radius: 5px; /* Kenar yuvarlama */
+    cursor: pointer; /* İşaretçi */
+    font-size: 16px; /* Yazı boyutu */
+    transition: background-color 0.3s; /* Arka plan rengi geçiş efekti */
+}
+
+.new-topic:hover {
+    background-color: #45a049; /* Hover durumu */
+}
+
+.forum-topics {
+    background-color: white; /* Beyaz arka plan */
+    border-radius: 10px; /* Kenar yuvarlama */
+    padding: 20px; /* İçerik boşluğu */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Gölgelendirme */
+}
+
+.topic {
+    border-bottom: 1px solid #ddd; /* Alt kenar */
+    padding: 15px 0; /* İçerik boşluğu */
+    transition: background-color 0.3s; /* Arka plan rengi geçiş efekti */
+}
+
+.topic:hover {
+    background-color: #f9f9f9; /* Hover durumunda arka plan rengi */
+}
+
+.topic h3 {
+    margin: 0; /* Üst boşluk yok */
+    font-size: 20px; /* Başlık boyutu */
+}
+
+.topic-details {
+    font-size: 14px; /* Detay yazı boyutu */
+    color: #555; /* Detay yazı rengi */
+}
+
+.reply {
+    background-color: #4CAF50; /* Buton arka plan rengi */
+    color: white; /* Yazı rengi */
+    padding: 8px 12px; /* İç boşluk */
+    border: none; /* Kenar yok */
+    border-radius: 5px; /* Kenar yuvarlama */
+    cursor: pointer; /* İşaretçi */
+    font-size: 14px; /* Yazı boyutu */
+    transition: background-color 0.3s; /* Arka plan rengi geçiş efekti */
+}
+
+.reply:hover {
+    background-color: #45a049; /* Hover durumu */
+}
+
+footer {
+    text-align: center; /* Ortala */
+    padding: 10px; /* İç boşluk */
+    background-color: #4CAF50; /* Alt kısım arka plan rengi */
+    color: white; /* Yazı rengi */
+    position: relative; /* Konum ayarı */
+    bottom: 0; /* En altta tut */
+    width: 100%; /* Tüm genişliği kapla */
+}
