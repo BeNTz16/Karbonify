@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('background.jpg'); /* Arka plan resmi */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2; /* Navbar'ı öne getir */
+    position: relative;
+}
+
+.app-title {
+    font-size: 2.5em; /* Mobil için uygun boyut */
+    color: #8bc34a;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.navbar nav {
+    display: flex;
+    flex-wrap: wrap; /* Taşma durumunda alt satıra geçer */
+    justify-content: center; /* Merkezde hizalama */
+    gap: 10px; /* Mobilde daha az boşluk */
+}
+
+.navbar nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em; /* Mobil için uygun boyut */
+    padding: 10px 15px; /* Bağlantılara padding ekledik */
+    border-radius: 5px; /* Kenarları yuvarlamak için */
+    transition: background-color 0.3s; /* Hover efekti için geçiş */
+}
+
+.navbar nav a:hover {
+    background-color: rgba(139, 195, 74, 0.5); /* Hover arka plan rengi */
+    color: #8bc34a; /* Renk değişimi */
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    max-width: 90%; /* Mobilde daha geniş içerik alanı */
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px auto; /* Üstte ve altta boşluk bırak */
+    flex: 1; /* Esneklik sağla */
+}
+
+.intro h2 {
+    font-size: 2em; /* Mobil için uygun boyut */
+    margin-bottom: 20px;
+    color: #8bc34a;
+}
+
+.intro p {
+    font-size: 1.1em; /* Mobil için uygun boyut */
+    margin-bottom: 30px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Daha az boşluk */
+}
+
+.feature-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px; /* Mobil için uygun padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease; /* Hover animasyonu */
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-box h3 {
+    font-size: 1.5em; /* Mobil için uygun boyut */
+    color: #8bc34a;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 0.9em; /* Mobil için uygun boyut */
+    color: #ddd;
+}
+

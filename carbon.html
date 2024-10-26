@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karbonify - Karbon Ayak İzi Hesaplama</title>
+    <link rel="stylesheet" href="stylecarbon.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="app-title">Karbonify</h1>
+        <nav>
+            <a href="index.html">|Ana Sayfa|</a> 
+            <a href="forum.html">|Forum|</a>
+            <a href="mobile.html">|Mobil Uygulama|</a>
+            <a href="carbon.html">|Karbon ayak izini hesapla|</a>
+            <a href="map.html">|Haritalar|</a>
+            <a href="information.html">|Hakkımızda|</a>
+            <a href="profile.html">|Profil|</a>  
+            <a href="login.html">|Çıkış|</a> 
+        </nav> 
+    </header>
+    
+    <main class="content">
+        <section class="calculator-section">
+            <h2>Karbon Ayak İzi Hesaplama</h2>
+            <p>Karbon ayak izinizi hesaplamak için aşağıdaki bilgileri doldurun:</p>
+            <form class="calculator-form">
+                <label for="electricity">Aylık Elektrik Tüketimi (kWh):</label>
+                <input type="number" id="electricity" required>
+                
+                <label for="gas">Aylık Doğalgaz Tüketimi (m³):</label>
+                <input type="number" id="gas" required>
+                
+                <label for="car">Yıllık Araç Kullanımı (km):</label>
+                <input type="number" id="car" required>
+
+                <button type="submit">Hesapla</button>
+            </form>
+
+            <div class="result" id="result" style="display:none;">
+                <h3>Sonuç:</h3>
+                <p id="calculationResult"></p>
+            </div>
+        </section>
+    </main>
+    <script>
+        const form = document.querySelector('.calculator-form');
+        const resultDiv = document.getElementById('result');
+        const calculationResult = document.getElementById('calculationResult');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const electricity = parseFloat(document.getElementById('electricity').value);
+            const gas = parseFloat(document.getElementById('gas').value);
+            const car = parseFloat(document.getElementById('car').value);
+
+            // Basit bir hesaplama (örnek oranlar)
+            const carbonFootprint = (electricity * 0.5) + (gas * 1.8) + (car * 0.2);
+            calculationResult.innerText = `Karbon ayak iziniz: ${carbonFootprint.toFixed(2)} kg CO2`;
+            resultDiv.style.display = 'block';
+        });
+    </script>
+</body>
+</html>

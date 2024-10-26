@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('background.jpg'); /* Arka plan resmi */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2; /* Navbar'ı öne getir */
+    position: relative;
+}
+
+.app-title {
+    font-size: 2.5em; /* Başlık boyutu */
+    color: #8bc34a; /* Tema rengi */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.navbar nav {
+    display: flex;
+    flex-wrap: wrap; /* Taşma durumunda alt satıra geçer */
+    justify-content: center; /* Merkezde hizalama */
+    gap: 10px; /* Boşluk */
+}
+
+.navbar nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em; /* Bağlantı boyutu */
+    padding: 10px 15px; /* Bağlantılara padding ekledik */
+    border-radius: 5px; /* Kenarları yuvarlamak için */
+    transition: background-color 0.3s; /* Hover efekti için geçiş */
+}
+
+.navbar nav a:hover {
+    background-color: rgba(139, 195, 74, 0.5); /* Hover arka plan rengi */
+    color: #8bc34a; /* Renk değişimi */
+}
+
+.content {
+    text-align: center;
+    padding: 20px; /* Mobil için uygun padding */
+    max-width: 90%; /* Genişlik ayarı */
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 20px; /* Üst boşluğu ayarla */
+    position: relative; /* İçerik konumu */
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Yuvarlak profil fotoğrafı */
+    border: 3px solid #8bc34a; /* Kenar rengi */
+    margin-bottom: 20px; /* Aşağı boşluk */
+}
+
+.profile-header h2 {
+    font-size: 2em; /* Başlık boyutu */
+    color: #8bc34a; /* Tema rengi */
+    margin-bottom: 10px; /* Alt boşluk */
+}
+
+.profile-header p {
+    font-size: 1.2em; /* Metin boyutu */
+    color: #ddd; /* Açık gri metin rengi */
+}
+
+.edit-button {
+    padding: 10px 20px; /* Düğme içindeki boşluk */
+    margin-top: 15px; /* Üst boşluk */
+    font-size: 1em; /* Düğme metin boyutu */
+    color: #fff; /* Düğme metin rengi */
+    background-color: #8bc34a; /* Düğme arka plan rengi */
+    border: none; /* Kenar yok */
+    border-radius: 20px; /* Yuvarlak köşeler */
+    cursor: pointer; /* İmleci el işareti yapar */
+}
+
+.edit-button:hover {
+    background-color: #7ab229; /* Hover durumu için renk değişimi */
+}
+
+.profile-stats {
+    display: flex;
+    flex-direction: column; /* Dikey hizalama */
+    gap: 20px; /* Boşluk */
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.1); /* İçerik kutusunun arka planı */
+    padding: 20px; /* İçerik kutusunun iç boşluğu */
+    border-radius: 10px; /* Yuvarlak köşeler */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Gölgelendirme */
+    transition: transform 0.3s ease; /* Hover animasyonu */
+}
+
+.stat-box:hover {
+    transform: translateY(-5px); /* Hover durumunda yukarı kaydırma */
+}
+
+.stat-box h3 {
+    font-size: 1.8em; /* Başlık boyutu */
+    color: #8bc34a; /* Tema rengi */
+    margin-bottom: 10px; /* Alt boşluk */
+}
+
+.stat-box p {
+    font-size: 1.5em; /* Metin boyutu */
+    color: #ddd; /* Açık gri metin rengi */
+}
+

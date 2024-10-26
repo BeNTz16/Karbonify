@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karbonify Forum</title>
+    <link rel="stylesheet" href="styleforum.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="app-title">Karbonify</h1>
+        <nav>
+            <a href="index.html">|Ana Sayfa|</a> 
+            <a href="forum.html">|Forum|</a>
+            <a href="mobile.html">|Mobil Uygulama|</a>
+            <a href="carbon.html">|Karbon ayak izini hesapla|</a>
+            <a href="map.html">|Haritalar|</a>
+            <a href="information.html">|Hakkımızda|</a>
+            <a href="profile.html">|Profil|</a>  
+            <a href="login.html">|Çıkış|</a> 
+        </nav> 
+    </header>
+    
+    <main class="content">
+        <section class="features">
+            <h2>Son Gönderiler</h2>
+            <article class="feature-box">
+                <h3>Ağaç Diktikten Sonra Ne Yapmalıyım?</h3>
+                <p>Kullanıcı: Ahmet123 - 26 Ekim 2024</p>
+                <p>Ağaç dikiminden sonra dikkat edilmesi gerekenler nelerdir? Tecrübelerinizi paylaşın!</p>
+                <button class="reply-button">Yanıtla</button> <!-- class eklendi -->
+            </article>
+            <article class="feature-box">
+                <h3>Karbon Ayak İzi Nasıl Hesaplanır?</h3>
+                <p>Kullanıcı: Elif456 - 25 Ekim 2024</p>
+                <p>Karbon ayak izimi hesaplamak için hangi yöntemleri kullanmalıyım?</p>
+                <button class="reply-button">Yanıtla</button> <!-- class eklendi -->
+            </article>
+            <!-- Daha fazla gönderi eklenebilir -->
+        </section>
+        
+        <section class="new-post">
+            <h2>Yeni Gönderi Oluştur</h2>
+            <form>
+                <label for="title">Başlık:</label>
+                <input type="text" id="title" required>
+                
+                <label for="content">İçerik:</label>
+                <textarea id="content" rows="5" required></textarea>
+                
+                <button type="submit">Gönder</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
